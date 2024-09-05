@@ -1,0 +1,12 @@
+peft 
+deepspeed 
+accelerate==0.30.1 
+datasets 
+rouge 
+tiktoken 
+einops 
+transformers_stream_generator 
+nltk
+torch==2.1.2
+transformers==4.39.0
+scikit-learn
