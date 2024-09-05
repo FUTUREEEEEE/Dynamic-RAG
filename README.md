@@ -1,6 +1,7 @@
 # Adapting to Non-Stationary Environments: Multi-Armed Bandit Enhanced Retrieval-Augmented Generation on Knowledge Graphs
 
 ![alt text](figs/image.png)
+
 **Proposed MAB-enhanced RAG framework.** The input query undergoes feature extraction (e.g., multi-entity query),
 followed by the MAB algorithm, which selects the optimal retrieval method by predicting the most rewarding option (e.g.,
 Query Language method). The selected method retrieves information from a Knowledge Graph (KG), and an LLM generates
@@ -41,6 +42,7 @@ python run.py --exp_name MO_GGF_adaptive_updata_offline --loss_policy MO_GGF_ada
 
 ## Results
 **Results under Non-stationary environment (mean ± std)**
+
 ![alt text](figs/results.png)
 
 **Results under Stationary environment**
