@@ -74,7 +74,14 @@ llama2_prompt='''<s>[INST]<<SYS>>
 
 {user_message}[/INST]'''
 
-llamaindexrouter_prompt = '''Please enter the index of the method you want to use for Retrieval: The question is {question} and the options are {{ChatKBQA_gen,RoG,Decaf_fid_gen}}; if the question corresponds to multiple answers response ChatKBQA_gen; if the question requires a process of reasoning response RoG; Otherwise response Decaf_fid_gen
+llamaindexrouter_prompt = '''Please choose the best retrieval method for the following question: {question} Options:
+
+If the question pertains to multiple correct answers, select "KG Query Language Retrieval".
+If answering the question involves a reasoning process, select "LLM agent Retrieval".
+For all other scenarios, select "Dense Retrieval".
+{EXAMPLES OF SELECTION}:
+
+{USER_QUERY}
 '''
 
 
